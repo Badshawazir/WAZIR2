@@ -102,7 +102,7 @@ def rizwan():
     todz = ''
     IP = ipm['origin']
     
-      a=requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').text
+
     print
     print(' [1] Start File Cloning')
     print(' [2] Create File [Best-Method]')
